@@ -1,0 +1,38 @@
+body 
+{
+font-family: Arial;
+}
+header 
+{
+  font-size: 32pt;
+  text-align: center;
+}
+em 
+{
+  font-weight: lighter;
+}
+main 
+{
+  font-size: 14pt;
+  text-align: justify;
+}
+.drinkImg img
+{
+  width: 20px;
+}
+.advertising
+{
+  font-size: 12pt;
+  margin-left: 30pt;
+  margin-top: 5pt;
+  margin-bottom: 5pt;
+}
+footer
+{
+  text-align: right;
+}
+p.greetings
+{
+  font-weight: bold;
+  font-size: 24pt;
+}
