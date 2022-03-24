@@ -27,9 +27,18 @@ main
   margin-top: 5pt;
   margin-bottom: 5pt;
 }
+span 
+{
+  font-size: 16pt;
+  font-weight: bold;
+}
 footer
 {
   text-align: right;
+}
+p.copyright 
+{
+  text-align: left;
 }
 p.greetings
 {
