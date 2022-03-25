@@ -4,7 +4,7 @@ font-family: Arial;
 }
 header 
 {
-  font-size: 32pt;
+  font-size: 24pt;
   text-align: center;
 }
 em 
@@ -44,4 +44,36 @@ p.greetings
 {
   font-weight: bold;
   font-size: 24pt;
+}
+/*Таблица для второго документа "Site2""Site3" */
+table.pricelist, table.Catalog_sashimi
+{
+  margin-left: auto;
+  margin-right: auto;
+}
+table.pricelist th, table.pricelist td
+{
+  border: gray solid thin;
+  padding: 4px;
+}
+table.pricelist thead 
+{
+  color: white;
+  background-color: gray;
+}
+table.pricelist tfoot 
+{
+  text-align: center;
+  font-style: italic;
+}
+table.Catalog, table.Catalog_sashimi
+{
+border-collapse: collapse;
+margin: auto;
+}
+table.Catalog td, table.Catalog_sashimi
+{
+border-top: black thin dotted;
+border-bottom: black thin dotted;
+padding: 10px;
 }
