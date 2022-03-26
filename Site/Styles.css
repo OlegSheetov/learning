@@ -45,13 +45,28 @@ p.greetings
   font-weight: bold;
   font-size: 24pt;
 }
+.nav_panel
+{
+  float: left;
+  width: 150px;
+  margin: 10px 30px 10px 0px;
+  padding: 10px;
+  border: black medium double;
+  border-radius: 10px;
+}
+nav
+{ 
+font-size: 20pt;
+margin-top: 5px;
+margin-bottom: 5px;
+}
 /*Таблица для второго документа "Site2""Site3" */
 table.pricelist, table.Catalog_sashimi
 {
   margin-left: auto;
   margin-right: auto;
 }
-table.pricelist th, table.pricelist td
+table.pricelist th, table.pricelist td, 
 {
   border: gray solid thin;
   padding: 4px;
@@ -77,3 +92,4 @@ border-top: black thin dotted;
 border-bottom: black thin dotted;
 padding: 10px;
 }
+
