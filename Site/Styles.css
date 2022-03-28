@@ -1,12 +1,13 @@
 body 
 {
 font-family: Arial;
+
 }
 header 
 {
   font-size: 24pt;
   text-align: center;
-}
+ }
 em 
 {
   font-weight: lighter;
@@ -15,6 +16,10 @@ main
 {
   font-size: 14pt;
   text-align: justify;
+}
+.main_text /*просто реши подвинуть текст на главной странице*/
+{
+  padding-left: 20%;
 }
 .drinkImg img
 {
@@ -56,7 +61,7 @@ p.greetings
 }
 nav
 { 
-font-size: 20pt;
+font-size: 15pt;
 margin-top: 5px;
 margin-bottom: 5px;
 }
@@ -66,7 +71,7 @@ table.pricelist, table.Catalog_sashimi
   margin-left: auto;
   margin-right: auto;
 }
-table.pricelist th, table.pricelist td, 
+table.pricelist th, table.pricelist td
 {
   border: gray solid thin;
   padding: 4px;
@@ -85,11 +90,15 @@ table.Catalog, table.Catalog_sashimi
 {
 border-collapse: collapse;
 margin: auto;
+
 }
-table.Catalog td, table.Catalog_sashimi
+table.Catalog td, table.Catalog_sashimi td
 {
 border-top: black thin dotted;
 border-bottom: black thin dotted;
 padding: 10px;
 }
-
+form
+{
+padding: 0cm 42% 0cm;
+}

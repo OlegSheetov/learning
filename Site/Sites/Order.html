@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Заказ столика</title>
+  <link rel="stylesheet" href="/Styles.css">
+</head>
+<body>
+  <body>
+    <header>
+      <div class="Заголовок" >
+    <h1>Суши-бар <em>&laquo;Йокогама&raquo;
+    </em></h1>
+    <img src="/Images/sushi.jpg" alt="">
+    
+      </div>
+  
+    
+    <hr>
+    </header>
+     <nav class="nav_panel">
+      <div><a href="/Sites/index.html">Главная</a></div>
+      <div><a href="/Sites/Catalog-Сашими.html">Сашими</a></div>
+      <div><a href="/Sites/Catalog-Суши.html">Суши</a></div>
+      <div><a href="/Sites/Catalog-Роллы.html">Роллы</a></div>
+      <div><a href="/Sites/Pricelist.html">Прайс-лист</a></div>
+      <div><a href="/Sites/Order.html">Заказать столик</a></div>
+      <div><a href="/Sites/TakeAway.html">Заказать суши</a></div>
+    </nav>
+  <main>
+  <div>
+    <h2>Заказ столика</h2>
+    <form action="mailto:order@yokogama.ru"
+      method="post" enctype="text/plain">
+      <p><label for="name">Как к вам обращаться?</label><br>
+      <input type="text" name="name" id="name" placeholder="Имя" required></p>
+
+      <p><label for="phone">По какому телефону вам перезвонить ?</label><br>
+       <input type="text" name="phone" id="phone" placeholder="Телефон" required></p>
+
+      <p><label for="time">На какое время желаете заказать столик?</label><br>
+       <input type="time" name="time" id="time" required>
+        <input type="date" name="data" id="data" required></p>
+
+      <p><label for="cnt">На сколько человек заказывается столик?</label><br>
+        <input type="radio" name="cnt" id="cnt" value="1">1
+        <input type="radio" name="cnt" id="cnt" value="2">2
+        <input type="radio" name="cnt" id="cnt" value="3 or more">3 и более
+       </p>
+       <p><input type="checkbox" name="children" id="children" value="*">Среди клиентов будут дети</p>
+
+
+      <p><input type="image" src="/Images/order_button.jpg" > </p>
+    </form>
+  </div>
+  </main>
+  <Footer>
+    <hr> 
+    <p class="greetings">Ждем вас!</p>
+    <address>Наш адрес:<br>
+      ул.Зеленая,17</address>
+  </Footer>
+</body>
+</html>

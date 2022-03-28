@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Забрать с собой</title>
+  <link rel="stylesheet" href="/Styles.css">
+</head>
+<body>
+  <header>
+      <div class="Заголовок" >
+    <h1>Суши-бар <em>&laquo;Йокогама&raquo;
+    </em></h1>
+    <img src="/Images/sushi.jpg" alt="">
+     </div>
+     <hr>
+     
+    </header>
+    <nav class="nav_panel">
+      <div><a href="/Sites/index.html">Главная</a></div>
+      <div><a href="/Sites/Catalog-Сашими.html">Сашими</a></div>
+      <div><a href="/Sites/Catalog-Суши.html">Суши</a></div>
+      <div><a href="/Sites/Catalog-Роллы.html">Роллы</a></div>
+      <div><a href="/Sites/Pricelist.html">Прайс-лист</a></div>
+      <div><a href="/Sites/Order.html">Заказать столик</a></div>
+      <div><a href="/Sites/TakeAway.html">Заказать суши</a></div>
+    </nav>
+  <main>
+    
+    <form action="mailto:order@yokogama.ru"
+    method="post" enctype="text/plain">
+    
+    <h2>Заказ Суши.</h2>
+
+    <p><label for="dishes">Что желаете заказать?</label><br>
+    <select name="dishes" id="dishes" size="6"   multiple>
+      <optgroup label ="Сашими"></label>
+        <option value="unagi">Унаги</option>
+        <option value="hamachi">Хамачи</option>
+      </optgroup>
+      <optgroup label="Суши">
+        <option value="chukka">Чукка</option>
+        <option value="maguro">Магуро</option>
+        <option value="tobiko">Тобико</option>
+      </optgroup>
+      <optgroup label="Роллы">
+        <option value="kunsei_Batakon">Кунсей Батакон</option>
+        <option value="arigato">Аригато</option>
+        <option value="Mexikanskii">Мексиканский</option>
+      </optgroup>
+    </select>
+    </p>
+    
+    <p>
+      <label for="text">По какому телефону вам перезвонить ?</label><br>
+      <input type="phone" name="phone" id="phone" placeholder="Телефон" required>
+    </p>
+
+    <input type="image" src="/Images/order_button.jpg">
+    
+    </form>
+  </main>
+  <Footer>
+    <hr> 
+    <p class="greetings">Ждем вас!</p>
+    <address>Наш адрес:<br>
+      ул.Зеленая,17</address>
+  </Footer>
+</body>
+</html>
