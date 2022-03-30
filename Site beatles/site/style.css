@@ -1,0 +1,62 @@
+body 
+{
+   font-family: Arial;
+   background-color: rgb(247, 204, 172);
+}
+header
+{
+  font-size: 20pt;
+  text-align: center;
+  padding-bottom: 2cm;
+  background-color:rgb(58 ,56, 69);
+  color: white;
+}
+.yesterday,.let,.yellow
+{
+  padding-top: 2cm;
+  padding-bottom: 2cm;
+ 
+}
+.yesterday video, .let video, .yellow video
+{
+  width: 848px;
+  height: 480px;
+}
+.yesterday img,.let img,.yellow img,.gallery img
+{
+  width: 400px;
+  height: 480px;
+  padding-left: 1cm;
+}
+
+/*Код для галереи*/
+/*.photogallery
+{
+  margin-left: auto;
+  margin-right: auto;
+}
+.photogallery td
+{
+text-align: center;
+font-size: 20pt;
+padding-top: 2cm;
+padding-bottom: 2cm;
+}*/
+
+/*Понятия не имею как сделать пункт №12 Урок 10. */
+/*Мне удалось сделать так как нужно в задании только с изображениями из приложения к книге. Однако я совсем не понимаю как работает следующий код и нужен ли он вообще.*/
+body {margin: 0px;}
+.gallery-item img 
+{
+  width: 100%;
+  height: 100%;
+}
+body.noscroll {overflow: hidden;}
+
+
+footer
+{
+  height: 100px;
+  background-color: #826F66;
+  text-align: center;
+}
