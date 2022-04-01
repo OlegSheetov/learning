@@ -53,6 +53,7 @@ body {margin: 0px;}
 }
 body.noscroll {overflow: hidden;}
 
+a[target=gallery] {font-size: 16pt;}
 
 footer
 {

@@ -17,7 +17,7 @@ main
   font-size: 14pt;
   text-align: justify;
 }
-.main_text /*просто реши подвинуть текст на главной странице*/
+.main_text /*просто решил подвинуть текст на главной странице*/
 {
   padding-left: 20%;
 }
@@ -37,10 +37,7 @@ span
   font-size: 16pt;
   font-weight: bold;
 }
-footer
-{
-  text-align: right;
-}
+
 p.copyright 
 {
   text-align: left;
@@ -65,8 +62,8 @@ font-size: 15pt;
 margin-top: 5px;
 margin-bottom: 5px;
 }
-/*Таблица для второго документа "Site2""Site3" */
-table.pricelist, table.Catalog_sashimi
+/*Таблица для второго документа "Прайс-лист*/
+table.pricelist, table.Catalog
 {
   margin-left: auto;
   margin-right: auto;
@@ -86,13 +83,23 @@ table.pricelist tfoot
   text-align: center;
   font-style: italic;
 }
-table.Catalog, table.Catalog_sashimi
+table.pricelist tbody th[colspan="2"]
+/*Задает выравнивание элементам таблицы в теле таблицы в заголовках таблицы с атрибутом colspan*/
+{
+  text-align: center;
+}
+table.pricelist td:last-child:not(:only-child)
+{
+  background-color: lightgrey;
+  border: none;
+}
+/* Для страниц с суши, сашими и роллы*/
+table.Catalog
 {
 border-collapse: collapse;
 margin: auto;
-
 }
-table.Catalog td, table.Catalog_sashimi td
+table.Catalog td
 {
 border-top: black thin dotted;
 border-bottom: black thin dotted;
@@ -101,4 +108,25 @@ padding: 10px;
 form
 {
 padding: 0cm 42% 0cm;
+}
+table.Catalog tr:first-child td 
+{
+border-top: none;
+}
+table.Catalog tr:last-child td
+{
+  border-bottom: none;
+}
+table.Catalog td p:first-of-type::first-letter
+{
+  font-size: 24pt;
+}
+p::selection
+{
+  color: black;
+  background-color: lightgrey;
+}
+footer
+{
+  text-align: right;
 }
