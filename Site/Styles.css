@@ -1,13 +1,40 @@
+@font-face
+{
+  font-family:"CaviarDreams" ;
+  src: url(/fonts/Caviar_Dreams/CaviarDreams.ttf);
+}
+@font-face
+{
+  font-family:"CaviarDreams_Bold" ;
+  src: url(/fonts/Caviar_Dreams/Caviar_Dreams_Bold.ttf);
+  font-weight:bold;
+}
+@font-face
+{
+  font-family:"CaviarDreams_Bolditalic" ;
+  src: url(/fonts/Caviar_Dreams/CaviarDreams_BoldItalic.ttf);
+  font-weight:bolder;
+  font-style:italic;
+}
+@font-face
+{
+  font-family:"CaviarDreams_Italic" ;
+  src: url(/fonts/Caviar_Dreams/CaviarDreams_Italic.ttf);
+  font-style:italic;
+}
+
+
 body 
 {
-font-family: Arial;
-
+font-family:"CaviarDreams";
 }
 header 
 {
   font-size: 24pt;
   text-align: center;
+  text-shadow: 3pt 3pt 5pt darkgrey;
  }
+
 em 
 {
   font-weight: lighter;
@@ -55,6 +82,7 @@ p.greetings
   padding: 10px;
   border: black medium double;
   border-radius: 10px;
+  
 }
 nav
 { 
@@ -105,6 +133,11 @@ border-top: black thin dotted;
 border-bottom: black thin dotted;
 padding: 10px;
 }
+table.Catalog h3 
+{
+font-variant: small-caps;
+letter-spacing: 2pt;
+}
 form
 {
 padding: 0cm 42% 0cm;
@@ -120,6 +153,11 @@ table.Catalog tr:last-child td
 table.Catalog td p:first-of-type::first-letter
 {
   font-size: 24pt;
+  vertical-align: top;
+}
+table.Catalog h3:after
+{
+content: ":";
 }
 p::selection
 {
