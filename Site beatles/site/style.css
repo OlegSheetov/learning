@@ -29,6 +29,14 @@ header
   padding-left: 1cm;
 }
 
+/*Создание счетчика для нумерации гиперссылок в галерее.*/
+body {counter-reset: n1;}
+.gallery p::before
+{counter-increment: n1;
+  content: counter(n1) ". ";
+
+}
+
 /*Код для галереи*/
 /*.photogallery
 {
