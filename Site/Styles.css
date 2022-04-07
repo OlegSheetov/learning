@@ -170,8 +170,33 @@ letter-spacing: 2pt;
 }
 form
 {
-padding: 0cm 42% 0cm;
-
+margin: 0cm 42% 0cm;
+width: 400px;
+border: darkgrey dotted thin;
+border-radius: 5px;
+padding: 0px 10px ;
+}
+form :focus
+{
+  border: double;
+  border-radius: 5px;
+  background:rgba(255, 255, 0, 0.486) ;
+}
+form :valid
+{
+  background: rgba(0, 128, 0, 0.37);
+}
+form :invalid
+{
+  background: rgba(255, 0, 0, 0.305);
+}
+input[type=submit]
+{
+font: bold 20pt Verdana;
+text-transform: uppercase;
+width: 250px;
+border: thick solid black;
+border-radius: 0px;
 }
 table.Catalog tr:first-child td 
 {
@@ -186,7 +211,7 @@ table.Catalog td p:first-of-type::first-letter
   font-size: 24pt;
   vertical-align: top;
 }
-table.Catalog h3:after
+table.Catalog h3:after/*Просто расставляет двоеточия в заголовках*/
 {
 content: ":";
 }
