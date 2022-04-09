@@ -1,16 +1,22 @@
 body 
 {
-  background-color: #F7CCAC;
+  background-image:url(/Images/bg1.jpg),url(/Images/bg2.jpg),url(/Images/bg3.jpg),url(/Images/main_bg.jpg) ;
+  background-size: 110pt,110pt,110pt, cover;
+  background-position: 5pt 56pt,5pt 176pt,5pt 300pt, 0pt 0pt,center;
+  background-attachment:fixed;
+  background-repeat: no-repeat;
 }
 header 
 {
   font-family: "Verdana", Geneva, Tahoma, sans-serif;
   font-size: 42pt;
   text-align: right;
-  background-color:#3A3845;
+  background-image: 
+  radial-gradient(closest-side at 50pt 50%,#3A3845,white, #3A3845,white,#3A3845);
+  /*background-color:#3A3845;*/
   color: white;
   margin-top: 8pt;
-  margin-left: 80pt;
+  margin-left: 120pt;
   margin-right: 8pt;
   padding-right: 12pt;
 }
@@ -22,7 +28,7 @@ main p
 }
 main
 {
-margin-left: 80pt;
+margin-left: 120pt;
 padding-left: 20pt;
 padding-right: 10pt;
 
@@ -70,6 +76,6 @@ a[target=gallery] {font-size: 16pt;}
 footer
 {
   height: 100px;
-  background-color: #826F66;
+ 
   text-align: center;
 }

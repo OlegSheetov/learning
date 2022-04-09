@@ -27,6 +27,8 @@
 body 
 {
 font-family:"CaviarDreams";
+background-image: linear-gradient(to right top, salmon 0% ,
+ white 67%, salmon 100%);
 }
 header 
 {
