@@ -36,6 +36,10 @@ border-left-width: 20pt ;
 border-left-style: solid;
 border-left-color: #3A3845;
 }
+.two-collums
+{
+  column-width: 500px;
+}
 .yesterday,.let,.yellow
 {
   padding-top: 2cm;
