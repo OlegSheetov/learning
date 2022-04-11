@@ -58,6 +58,17 @@ border-left-color: #3A3845;
   padding-left: 1cm;
 }
 
+/*Новый способ таблицы.*/
+div.tbl{display: table;}
+div.tbl > div {display: table-row;}
+div.tbl > div > div > a 
+{
+  display: block; padding: 10px;
+   padding-right: 10px;
+}
+div.tbl > div > * {display: table-cell;vertical-align: middle;}
+
+
 /*Создание счетчика для нумерации гиперссылок в галерее.*/
 body {counter-reset: n1;}
 .gallery p::before
