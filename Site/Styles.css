@@ -14,7 +14,7 @@
   font-family:"CaviarDreams_Bolditalic" ;
   src: url(/fonts/Caviar_Dreams/CaviarDreams_BoldItalic.ttf);
   font-weight:bolder;
-  font-style:italic;
+  font-style:bold italic;
 }
 @font-face
 {
@@ -27,24 +27,57 @@
 body 
 {
 font-family:"CaviarDreams";
-background-image:  repeating-linear-gradient(to right, white 0px , bisque 5px , white 10px )
-}
-header 
-{
-  font-size: 24pt;
-  text-align: center;
-  text-shadow: 3pt 3pt 5pt darkgrey;
- }
-header img
-{
-  width: 67%;
-  min-width: 500px;
-  max-width: 700px;
-}
+background-image:  repeating-linear-gradient(to right, white 0px , bisque 5px , white 10px ); 
 
-em 
+}
+header
 {
-  font-weight: lighter;
+  margin-top: 0px;
+  background-color: white;
+  height: 80pt;
+  margin-bottom: 20pt;
+  border-bottom: lightgray dashed 2pt ;
+ }
+.pos1, .pos2, .pos3, .pos4
+ {
+  position: absolute;
+ }
+.pos1
+ {
+  left: 0pt;
+  top: 0pt;
+  width: 140pt;
+ }
+.pos1 img {height: 80pt;}
+.pos2 
+{
+left: 140pt;
+top: 29pt;
+right: 0pt;
+}
+.pos2 h1 
+{
+  font: bold italic 42pt CaviarDreams;
+  text-transform: uppercase;
+  text-align: right;
+  letter-spacing: 40pt;
+  margin: 0px;
+  background-color: darksalmon;
+}
+.pos3
+{
+  left: 140pt;
+  top: 4pt;
+  right: 70pt;
+}
+.pos3 h1 
+{
+  font: bold 24pt CaviarDreams;
+  text-transform: uppercase;
+  text-align: right;
+  letter-spacing: 20pt;
+  margin: 0px;
+  color: darksalmon;
 }
 main 
 {
@@ -228,9 +261,32 @@ p::selection
 }
 footer
 {
-  border-top: dashed 2pt lightgray;
-  margin-left: auto;
   text-align: right;
-  width: 50%;
-  min-width: 300px;
+  background-color: white;
+  height: 120pt;
+  position: relative;
+}
+.pos4
+{
+  top: 0pt;
+  right: 20pt;
+}
+.OrderTableButton
+{
+  position: absolute;
+  height: 100px;
+  width: 200px;
+  text-align: center;
+  background-color: bisque;
+  font-family:"CaviarDreams";
+  font-size: 40px;
+  border-radius: 10px;
+  box-shadow: 20px 20px 10px 15px lightgray;
+  top: 50px;
+  left: 100px;
+}
+.OrderTableButton a:link
+{
+  text-decoration: none;
+  color: black;
 }
