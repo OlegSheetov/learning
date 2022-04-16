@@ -22,12 +22,12 @@
   src: url(/fonts/Caviar_Dreams/CaviarDreams_Italic.ttf);
   font-style:italic;
 }
-
+ header, nav, main, footer {position: fixed;}
 
 body 
 {
   font-family:"CaviarDreams";
-  background-image:  repeating-linear-gradient(to right, white 0px , bisque 5px , white 10px ); 
+ 
 
 }
 header
@@ -37,6 +37,10 @@ header
   height: 80pt;
   margin-bottom: 20pt;
   border-bottom: lightgray dashed 2pt ;
+  left: 0pt;
+  top:0pt;
+  right: 0pt;
+
  }
 .pos1, .pos2, .pos3, .pos4
  {
@@ -81,9 +85,14 @@ header
 }
 main 
 {
-  
+  overflow: auto;
   font-size: 14pt;
   text-align: justify;
+  left: 190px;
+  top: 100pt;
+  right: 0pt;
+  bottom: 120pt;
+  background-image:  repeating-linear-gradient(to right, white 0px , bisque 5px , white 10px ); 
 }
 .main_text /*просто решил подвинуть текст на главной странице*/
 {
@@ -128,7 +137,11 @@ p.greetings
   border-radius: 10px;
   font-size: 15pt;
   margin-top: 5px;
-  margin-bottom: 5px;  
+  margin-bottom: 5px;
+  left: 0pt;
+  top: 100pt;
+  right: 120pt;
+  background-color: bisque;
 }
 nav a 
 {
@@ -261,8 +274,9 @@ footer
   text-align: right;
   background-color: rgba(255, 255, 255, 0.587);
   height: 120pt;
-  position: relative;
- 
+  left: 0pt;
+  right: 0pt;
+  bottom: 0pt;
 }
 .pos4
 {
@@ -289,12 +303,6 @@ footer
   color: black;
 }
 
-.OrderTableButton a:hover
-{
-  color: white;
-  background-color: rgba(127, 121, 115, 0.631);
-
-}
 
 
 
