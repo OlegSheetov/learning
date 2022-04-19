@@ -150,9 +150,15 @@ div#discography > div
   text-align: center;
   width: 200px;
   border-radius: 5px;
+  transition-duration: 0.2s;
   
 }
-div#discography > div:hover {transform: rotate(-5deg) translateY(-10px);}
+/* анимация для дискографии */ 
+div#discography > div:hover 
+{
+  transform: rotate(-5deg) translateY(-10px);
+  transition-duration: 0.1s;
+}
 footer
 {
   margin-left: auto;
