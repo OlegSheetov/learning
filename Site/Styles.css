@@ -23,7 +23,44 @@
   font-style:italic;
 }
 
+@keyframes navlinks 
+{
 
+  60%{color: black;}
+  100%
+  {
+    color: darksalmon;
+    transform: translateX(10px);
+  }
+}
+
+@keyframes orderbuttonanim
+{
+  from 
+  { 
+    left: -200pt;
+    background-color:white ;
+    transform: scale(0.2,0,2);
+  }
+  33%
+  {
+    left: 33pt;
+    background-color: white;
+    transform: scale(0.5,0.5);
+  }
+  67%
+  {
+    left: 67pt;
+    background-color: white;
+    transform: scale(1,1);
+  }
+  To 
+  {
+    left: 100pt;
+    background-color: yellow;
+    transform:scale(1,1);
+  }
+}
 body 
 {
   font-family:"CaviarDreams";
@@ -136,14 +173,20 @@ nav a
 }
 nav a:link, nav a:visited
  {
-   color: darkred;
-   text-decoration: none;
+  color: darkred;
+  text-decoration: none;
  }
  nav a:active, nav a:hover 
  {
-   color: darksalmon;
-   text-decoration: none;
+ 
+  text-decoration: none;
+
+  animation-name: navlinks;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+ 
  }
+
 /*Таблица для второго документа "Прайс-лист*/
 table.pricelist, table.Catalog
 {
@@ -262,7 +305,8 @@ footer
   background-color: rgba(255, 255, 255, 0.587);
   height: 120pt;
   position: relative;
- 
+  
+  
 }
 .pos4
 {
@@ -282,18 +326,13 @@ footer
   box-shadow: 20px 20px 10px 15px lightgray;
   top: 50px;
   left: 100px;
+
+ animation:  orderbuttonanim 1.5s 2s both;
 }
 .OrderTableButton a:link
 {
   text-decoration: none;
   color: black;
-}
-
-.OrderTableButton a:hover
-{
-  color: white;
-  background-color: rgba(127, 121, 115, 0.631);
-
 }
 
 
