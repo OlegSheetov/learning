@@ -1,3 +1,6 @@
+
+
+
 body 
 {
   background-image:url(/Images/bg1.jpg),url(/Images/bg2.jpg),url(/Images/bg3.jpg),url(/Images/main_bg.jpg) ;
@@ -170,3 +173,44 @@ footer
   width:calc(100% - 210px);
   height: 50px;
 }
+@media screen and (max-width: 600px) {
+  body {background: transparent;}
+  header h1, nav, main, footer {margin-left: 8pt;}
+  header h1 {
+      font-size: 28pt;
+      background: black;
+  }
+  nav {flex-direction: column;}
+  main {
+      padding-left: 0pt;
+      border-left: none;
+  }
+  nav a:active, nav a:hover {
+      transform: translateY(4px);
+  }
+  
+
+  div#discography > div 
+  {
+     background-color: white;
+     color: black;
+     border: black solid 2px;
+  }
+  iframe, video { max-width: 400px;}
+}
+
+@media print
+{ 
+body { background: transparent;}
+nav { display: none;}
+header h1 , main , footer { margin-left: 8pt;}
+main
+  {
+    padding-left: 0pt;
+    border-left: none;
+  }
+header h1 , footer p { color: black;}
+header h1 { letter-spacing: 10pt;}
+footer { border-top: 1px solid black;}
+}
+ 
